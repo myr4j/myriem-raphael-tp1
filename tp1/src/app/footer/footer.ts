@@ -1,11 +1,15 @@
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [
+    NgClass,
+  ],
   templateUrl: './footer.html',
   styleUrl: './footer.css'
 })
 export class Footer {
-
+  color: string = "";
+  height: string = "";
 }
