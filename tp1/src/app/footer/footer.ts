@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
   styleUrl: './footer.css'
 })
 export class Footer {
-  color: string = "";
-  height: string = "";
+  footerColor: string = "";
+  footerSize: string = "";
 }
