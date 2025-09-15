@@ -1,0 +1,10 @@
+.microsoft-logo {
+  --logo-size: 200px;
+    background-color: #f25022;
+    box-shadow:
+            var(--logo-size) 0 0 0 #7fba00,
+            0 var(--logo-size) 0 0 #00a4ef,
+            var(--logo-size) var(--logo-size) 0 0 #ffb900;
+    height: var(--logo-size);
+    width: var(--logo-size);
+}
