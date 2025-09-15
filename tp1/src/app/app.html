@@ -1,2 +1,20 @@
-<app-windows-logo></app-windows-logo>
-<app-footer [footerColor]="footer_color" [footerSize]="footer_size"></app-footer>
+<div [style.background]="backgroundColor" style="flex:1; display:flex; flex-direction:column;">
+  <Header
+      [size]="headerSize"
+      [background]="headerBackground"
+      [names]="textColorAlign">
+  </Header>
+
+  <!-- Conteneur flexible qui centre le WindowsLogo -->
+  <div style="flex:1; display:flex; align-items:center; justify-content:center;">
+    <WindowsLogo
+        [size]="160"
+        (colorSelected)="onColorSelected($event)">
+    </WindowsLogo>
+  </div>
+
+  <app-footer
+      [footerColor]="footer_color"
+      [footerSize]="footer_size">
+  </app-footer>
+</div>

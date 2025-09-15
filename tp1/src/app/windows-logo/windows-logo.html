@@ -1,4 +1,41 @@
-<div
-  class="microsoft-logo"
-  [style.--logo-size.px]="size"
-></div>
+<div class="windows-logo" [style.width.px]="size" [style.height.px]="size" role="group" aria-label="Windows logo - choose a color">
+  <button
+    class="square tl"
+    type="button"
+    [style.width.px]="squareSize"
+    [style.height.px]="squareSize"
+    [style.background]="colors[0]"
+    (click)="onSquareClick(colors[0])"
+    aria-label="Top left color">
+  </button>
+
+  <button
+    class="square tr"
+    type="button"
+    [style.width.px]="squareSize"
+    [style.height.px]="squareSize"
+    [style.background]="colors[1]"
+    (click)="onSquareClick(colors[1])"
+    aria-label="Top right color">
+  </button>
+
+  <button
+    class="square bl"
+    type="button"
+    [style.width.px]="squareSize"
+    [style.height.px]="squareSize"
+    [style.background]="colors[2]"
+    (click)="onSquareClick(colors[2])"
+    aria-label="Bottom left color">
+  </button>
+
+  <button
+    class="square br"
+    type="button"
+    [style.width.px]="squareSize"
+    [style.height.px]="squareSize"
+    [style.background]="colors[3]"
+    (click)="onSquareClick(colors[3])"
+    aria-label="Bottom right color">
+  </button>
+</div>
