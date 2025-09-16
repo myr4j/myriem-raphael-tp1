@@ -14,4 +14,5 @@ export class Header {
   @Input() names: string = '';
   @Input() size: string = '';
   @Input() background: string = '';
+
 }

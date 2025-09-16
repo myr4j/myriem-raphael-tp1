@@ -1,20 +1,19 @@
-<div [style.background]="backgroundColor" style="flex:1; display:flex; flex-direction:column;">
+<div [style.background]="backgroundColor" >
   <Header
       [size]="headerSize"
       [background]="headerBackground"
       [names]="textColorAlign">
   </Header>
 
-  <!-- Conteneur flexible qui centre le WindowsLogo -->
-  <div style="flex:1; display:flex; align-items:center; justify-content:center;">
+  <div class="logoWrapper">
     <WindowsLogo
-        [size]="160"
+        [size]="logoSize"
         (colorSelected)="onColorSelected($event)">
     </WindowsLogo>
   </div>
 
-  <app-footer
-      [footerColor]="footer_color"
-      [footerSize]="footer_size">
-  </app-footer>
+  <Footer
+      [footerColor]="footerColor"
+      [footerSize]="footerSize">
+  </Footer>
 </div>

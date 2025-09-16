@@ -2,7 +2,7 @@ import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'Footer',
   imports: [
     NgClass,
   ],
@@ -10,6 +10,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './footer.css'
 })
 export class Footer {
+
   @Input() footerColor: string = "";
   @Input() footerSize: string = "";
+
 }
